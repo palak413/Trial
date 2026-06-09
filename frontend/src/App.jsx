@@ -9,13 +9,13 @@ import LeaderboardPage from './pages/LeaderboardPage'
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-950 text-white">
+      <div style={{ minHeight: '100vh', background: '#f7f6f3' }}>
         <Navbar />
         <Routes>
-          <Route path="/"       element={<Dashboard />} />
-          <Route path="/upload" element={<UploadPage />} />
-          <Route path="/jobs"   element={<JobPage />} />
-          <Route path="/match"  element={<MatchPage />} />
+          <Route path="/"            element={<Dashboard />} />
+          <Route path="/upload"      element={<UploadPage />} />
+          <Route path="/jobs"        element={<JobPage />} />
+          <Route path="/match"       element={<MatchPage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
         </Routes>
       </div>
